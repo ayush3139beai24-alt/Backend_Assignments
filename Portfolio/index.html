@@ -1,11 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Chen — Software Developer</title>
+<meta name="description" content="Portfolio of Alex Chen, software developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    New
+
+<!-- Line-number gutter: signature element, runs the full page like an editor -->
+<div class="gutter" id="gutter" aria-hidden="true"></div>
+
+<div class="page">
+
+  <header class="site-header">
+    <a href="#top" class="logo">alex<span class="accent">.</span>dev</a>
+
+    <nav class="nav" id="nav">
+      <a href="#work">work</a>
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">// portfolio&nbsp;<span class="muted">v1.0</span></p>
+      <h1 class="hero-name">Alex Chen</h1>
+      <p class="hero-role">
+        <span id="roleText">Software Developer</span><span class="cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-bio">
+        I build fast, accessible web applications — from the database schema
+        to the last pixel of the UI. Currently focused on developer tooling
+        and design systems.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-meta">
+        <span>Based in San Francisco, CA</span>
+        <span class="dot">·</span>
+        <span>Open to freelance</span>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <h2 class="section-title"><span class="comment">/*</span> Work <span class="comment">*/</span></h2>
+
+      <div class="projects">
+
+        <article class="project reveal">
+          <div class="project-file">project-01.tsx</div>
+          <h3 class="project-title">Northwind Analytics</h3>
+          <p class="project-desc">
+            A real-time dashboard for e-commerce teams to track revenue,
+            inventory, and customer cohorts across multiple storefronts.
+          </p>
+          <ul class="project-tags">
+            <li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>D3.js</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-file">project-02.py</div>
+          <h3 class="project-title">Fieldnote</h3>
+          <p class="project-desc">
+            An offline-first note-taking API for researchers, with
+            conflict-free sync and full-text search built on Postgres.
+          </p>
+          <ul class="project-tags">
+            <li>Python</li><li>FastAPI</li><li>Redis</li><li>Docker</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-file">project-03.js</div>
+          <h3 class="project-title">Lumen UI</h3>
+          <p class="project-desc">
+            An open-source component library focused on accessibility —
+            every component ships with keyboard and screen-reader support.
+          </p>
+          <ul class="project-tags">
+            <li>JavaScript</li><li>Web Components</li><li>Storybook</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-file">project-04.go</div>
+          <h3 class="project-title">Relay</h3>
+          <p class="project-desc">
+            A lightweight message queue written in Go, built to learn the
+            internals of distributed systems and at-least-once delivery.
+          </p>
+          <ul class="project-tags">
+            <li>Go</li><li>gRPC</li><li>Kubernetes</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="#" target="_blank" rel="noopener">Source ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="section-title"><span class="comment">/*</span> About <span class="comment">*/</span></h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm a software developer with about five years of experience
+            building products end to end — APIs, data models, and the
+            interfaces people actually touch. I like small teams, clear
+            writing, and code that's boring in the best way.
+          </p>
+          <p>
+            Outside of work I contribute to a couple of open-source
+            libraries, mentor early-career developers, and I'm slowly
+            working through a stack of systems-design books that keeps
+            getting taller.
+          </p>
+        </div>
+
+        <dl class="about-facts reveal">
+          <div class="fact">
+            <dt>Location</dt>
+            <dd>San Francisco, CA</dd>
+          </div>
+          <div class="fact">
+            <dt>Focus</dt>
+            <dd>Full-stack web, developer tools</dd>
+          </div>
+          <div class="fact">
+            <dt>Currently</dt>
+            <dd>Senior Engineer @ Placeholder Inc.</dd>
+          </div>
+          <div class="fact">
+            <dt>Available</dt>
+            <dd>Freelance &amp; consulting</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2 class="section-title"><span class="comment">/*</span> Skills <span class="comment">*/</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>Go</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Frameworks</h3>
+          <ul>
+            <li>React / Next.js</li>
+            <li>Node.js / Express</li>
+            <li>FastAPI</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Infrastructure</h3>
+          <ul>
+            <li>PostgreSQL / Redis</li>
+            <li>Docker / Kubernetes</li>
+            <li>AWS</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Practice</h3>
+          <ul>
+            <li>Testing &amp; CI</li>
+            <li>Accessibility (WCAG)</li>
+            <li>Code review</li>
+            <li>Technical writing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2 class="section-title"><span class="comment">/*</span> Contact <span class="comment">*/</span></h2>
+
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <p class="contact-lead">
+            Have a project in mind, or just want to say hello?
+            My inbox is open.
+          </p>
+          <a href="mailto:hello@alexchen.dev" class="contact-email">hello@alexchen.dev</a>
+          <div class="socials">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="field-error" data-error-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="field-error" data-error-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="field-error" data-error-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed &amp; built by Alex Chen · <span id="year"></span></p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
